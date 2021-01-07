@@ -146,10 +146,11 @@ body{
 .productos{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0 150px;
    
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 .boton2{
