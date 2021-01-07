@@ -43,6 +43,36 @@ body{
 
 /*-------------- MAIN --------------*/
 
+.prueba-imagen {
+    width: 600px;
+    height: 600px;
+    background: url(./img/banner-img.png) no-repeat;
+    background-size: 100%;
+    animation: background 8s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+}
+
+@keyframes background{
+    25%{
+        background: url(./img/banner-img4.png) no-repeat;
+        background-size: 100%;
+    }
+
+    50%{
+        background: url(./img/banner-img2.png) no-repeat;
+        background-size: 100%;
+    }
+
+    75%{
+        background: url(./img/banner-img3.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+
 
 .cuerpo{
     width: 100%;
@@ -80,6 +110,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: -50px;
+    padding-left: 50px;
     
     
 }
@@ -150,7 +182,7 @@ body{
     padding: 0 150px;
    
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .boton2{
