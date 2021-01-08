@@ -49,16 +49,22 @@ body{
     background: url(./img/banner-img.png) no-repeat;
     background-size: 100%;
     animation: background 8s infinite;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -50px;
 }
 
+
+
 @keyframes background{
     25%{
         background: url(./img/banner-img4.png) no-repeat;
         background-size: 100%;
+        
+
     }
 
     50%{
@@ -167,6 +173,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 0;
 
 }
 
@@ -203,4 +210,172 @@ body{
 .boton2:hover{
    background: black;
    color: white;
+}
+
+
+
+@media (max-width: 600px){
+
+    *, *::before , *::after{
+        box-sizing: border-box;
+    }
+    
+    body{
+        
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header{
+        font-size: 6pt;
+    }
+
+    .main-info{
+        width: 500px;
+        height: 230px;
+        
+        
+        padding: 0;
+        margin-right: -20px;
+        padding-left: 20px;
+    }
+
+    .main-info :nth-child(1){
+        font-size: 13pt;
+        
+        
+       
+    }
+    
+    .main-info :nth-child(2){
+        font-size: 7pt;
+        color: darkgrey;
+        cursor: default;
+        margin-top: 0;
+        
+    }
+
+    .boton{
+        width: 80px;
+        height: 20px;
+        font-size: 5pt;
+        
+        
+    }
+    
+    .boton:hover{
+       background: hsl(39, 100%, 65%);
+       color: black;
+    }
+    
+
+    .cuerpo{
+        width: 500px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 10px;
+        
+    }
+
+    .prueba-imagen {
+        margin-top: 40px;
+        
+        height: 280px;
+        background: url(./img/banner-img.png) no-repeat;
+        background-size: 100%;
+        animation: background 8s infinite;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    @keyframes background{
+        25%{
+            background: url(./img/banner-img4.png) no-repeat;
+            background-size: 100%;
+            
+    
+        }
+    
+        50%{
+            background: url(./img/banner-img2.png) no-repeat;
+            background-size: 100%;
+        }
+    
+        75%{
+            background: url(./img/banner-img3.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+
+
+    .producto{
+        width: 200px;
+        height: 240px;
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        margin: 0 0;
+        
+        
+    
+    }
+
+    
+    .producto img{
+        width: 200px;
+        
+    }
+
+    
+
+
+    .productos{
+        margin: 0 auto;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0;
+       
+        width: 400px;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    
+    .boton2{
+        width: 60px;
+        height: 15px;
+        color: black;
+        border: 1px solid black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4pt;
+        letter-spacing: .2em;
+        margin-top: 10px;
+        transition: background .3s;
+    }
+    
+    .boton2:hover{
+       background: black;
+       color: white;
+    }
+    
+    
+
+    
+
+    
 }
